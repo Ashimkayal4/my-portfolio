@@ -23,9 +23,6 @@
           font-family: "Open Sans", sans-serif;
         }
         
-        .background{
-            background-image: url(./assets/FB_IMG_1647102273537.jpg);
-        }
     </style>
 
     <!--Tailwind customized color  -->
@@ -43,14 +40,15 @@
   </head>
   <body class="google-font ">
     <header>
-        <nav class="flex justify-around w-11/12 mx-auto"> 
+        <nav class="flex justify-around w-11/12 mx-auto mb-16 p-3"> 
             <div class="w-1/4 flex p-2">
                 <h2 class="text-2xl font-semibold pl-10">Portfolio</h2>
             </div>
             <div class="flex justify-center w-2/4  gap-10">
-                <button class="btn">Projects</button>
-                <button class="btn">Technologies</button>
-                <button class="btn">About Me</button>
+                <button id="project-btn" class="btn">Projects</button>
+                <button id="technologies-btn" class="btn">Technologies</button>
+                <button id="about-btn" class="btn">About Me</button>
+                <button id="contact-btn" class="btn">Contact Me</button>
             </div>
             <div class="flex justify-center w-1/4 gap-6 p-2">
                 <a href=""><i class="fa-brands fa-linkedin  text-2xl"></i><a>
@@ -72,7 +70,7 @@
         </div>
     </header>
     <main>
-        <section class="w-10/12 mx-auto mt-8">
+        <section id="Project-section" class="w-10/12 mx-auto mt-8">
             <h1 class="font-semibold text-2xl mb-4">Projects</h1>
             <div class="mb-8 flex gap-10">
                 <div class="border rounded-xl h-90 w-1/2 p-3">
@@ -121,7 +119,7 @@
         </section>
 
         <!-- Technologies section -->
-        <section class="w-10/12 mx-auto mt-6">
+        <section id="technologies-section" class="hidden w-10/12 mx-auto mt-6">
             <h1 class="font-semibold text-2xl mb-6">Technologies</h1>
            <div class="flex justify-between w-2/4 mb-3">
               <h2>HTML</h2>
@@ -150,11 +148,40 @@
            </div>
            <progress class="progress progress-error w-[300px] mb-4" value="100" max="100"></progress>
 
+           <h1 class="mt-6 text-2xl font-semibold mb-6">Additional Skills</h1>
+           <div class="flex justify-around">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Teamwork</li>
+           </div>
+           <div class="flex justify-around mt-6">
+             <li class="pl-6">Engagement</li>
+             <li class="pr-16">Quick Learning</li>
+             <p class="pr-16"></p>
+           </div>
         </section>
 
+        <section id="about-section" class="hidden w-10/12 mx-auto mt-6">
+            <h1 class="font-semibold text-2xl">About Me</h1>
+            <p>I am student .. writing later</p>
+        </section>
     </main>
     <footer>
+        
+        <div id="contact-section" class="hidden w-10/12 mx-auto mt-8 mb-8">
+            <div class="w-1/2"><h1 class="text-xl font-semibold">Feel free to contact Me</h1></div>
+            
+            <div class="flex w-1/2 gap-5 mt-2">
+                <div>
+                    <p>01990-835127</p>
 
+                </div>
+                <p>ashimkayal4@gmail.com</p>
+            </div>
+        </div>
+       
     </footer>
+
+    <script src="./js/fuction.js"></script>
   </body>
 </html>
